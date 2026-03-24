@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obras · Fulldome Lab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="fd-page">
+    <div class="fd-container">
+
+      <!-- NAV -->
+
+      <nav class="fd-nav">
+        <div class="fd-nav-inner">
+
+          <a href="index.html" class="fd-nav-brand">
+            Híbridos digitales
+          </a>
+
+          <div class="fd-nav-links">
+            <a href="index.html">Inicio</a>
+
+            <a href="obras.html" class="is-active">
+              Obras
+            </a>
+
+            <a href="recursos.html">
+              Recursos
+            </a>
+
+            <a href="produccion.html">
+              Producción
+            </a>
+
+            <a href="#">
+              Referencias
+            </a>
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- INTRO CURATORIAL -->
+
+      <section class="fd-works-intro">
+        <h1>
+          Archivo de obras fulldome
+        </h1>
+
+        <p>
+          Esta sección reúne una selección curada de obras vinculadas a prácticas de música visual,
+          experimentación audiovisual y producción artística en entornos inmersivos.
+          Más que un archivo exhaustivo, la plataforma propone un mapa de prácticas
+          que permite explorar diferentes formas de creación en formato fulldome.
+        </p>
+      </section>
+
+      <!-- MAPA DE PRACTICAS -->
+
+      <section class="fd-practices">
+        <span class="fd-section-kicker">Taxonomía curatorial</span>
+
+        <div class="fd-practices-header">
+
+        <h2>Mapa de prácticas</h2>
+
+        <button class="fd-show-all is-active" id="show-all-works">
+         Ver todas las obras
+        </button>
+
+        </div>
+
+        <div class="fd-practices-grid">
+
+          <div class="practice-card music" data-filter="musica-visual">
+            <span class="practice-label">01 · Música visual</span>
+            <h3>Música visual</h3>
+            <p>Relaciones estructurales entre sonido e imagen en entornos inmersivos.</p>
+          </div>
+
+          <div class="practice-card generative" data-filter="generativo">
+            <span class="practice-label">02 · Arte generativo</span>
+            <h3>Arte generativo</h3>
+            <p>Producción audiovisual basada en algoritmos y sistemas dinámicos.</p>
+          </div>
+
+          <div class="practice-card performance" data-filter="performance">
+            <span class="practice-label">03 · Performance audiovisual</span>
+            <h3>Performance audiovisual</h3>
+            <p>Creación en tiempo real mediante interacción sonora, visual y corporal.</p>
+          </div>
+
+          <div class="practice-card science" data-filter="arte-ciencia">
+            <span class="practice-label">04 · Arte y ciencia</span>
+            <h3>Arte y ciencia</h3>
+            <p>Visualización de fenómenos científicos, astronomía y cartografías del cielo.</p>
+          </div>
+
+          <div class="practice-card sensory" data-filter="narrativas">
+            <span class="practice-label">05 · Narrativas sensoriales</span>
+            <h3>Narrativas sensoriales</h3>
+            <p>Experiencias inmersivas vinculadas a ritualidad, percepción y espacio.</p>
+          </div>
+
+          <div class="practice-card research" data-filter="investigacion">
+            <span class="practice-label">06 · Investigación artística</span>
+            <h3>Investigación artística</h3>
+            <p>Proyectos desarrollados desde metodologías de investigación-creación.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- GALERIA DE OBRAS -->
+
+      <section class="fd-works-grid">
+
+        <!-- TEXOGRAFIAS -->
+
+        <article class="fd-work-card" data-category="investigacion">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/texografias.webp" alt="Texografías">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Investigación artística · Argentina
+            </span>
+
+            <h3>
+              Texografías
+            </h3>
+
+            <p class="fd-work-author">
+              Marina Vila · Elena Laplana · Nahuel Moron · Susana Landau
+            </p>
+
+            <a href="obras/texografias.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- SPEAK DOME -->
+
+        <article class="fd-work-card" data-category="performance">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/speak_dome_ceriani-kesler.gif" alt="Speak Dome">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Performance audiovisual · Argentina
+            </span>
+
+            <h3>
+              Speak Dome
+            </h3>
+
+            <p class="fd-work-author">
+              Fabián Kesler · Fabricio Costa Alisedo · Alejandra Ceriani
+            </p>
+
+            <a href="obras/speak-dome.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- BINARY OPPOSITION -->
+
+        <article class="fd-work-card" data-category="musica-visual">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/binary-oposition-edgar.png" alt="Binary Opposition">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Música visual · México
+            </span>
+
+            <h3>
+              Binary Opposition
+            </h3>
+
+            <p class="fd-work-author">
+              Edgar Barroso
+            </p>
+
+            <a href="obras/binary-opposition.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- FUZEE -->
+
+        <article class="fd-work-card" data-category="musica-visual">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/fuzee_luis harris.jpg" alt="Fuzee">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Música visual · Reino Unido
+            </span>
+
+            <h3>
+              Fuzee
+            </h3>
+
+            <p class="fd-work-author">
+              Louise Harris
+            </p>
+
+            <a href="obras/fuzee.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- METODO ENTROPIA -->
+
+        <article class="fd-work-card" data-category="generativo">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/metodo-Entropia.jpg" alt="Método Entropia1">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Arte generativo · Chile
+            </span>
+
+            <h3>
+              métodoEntropia1
+            </h3>
+
+            <p class="fd-work-author">
+              Félix Lazo
+            </p>
+
+            <a href="obras/metodo-entropia.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- IMPROVISATION -->
+
+        <article class="fd-work-card" data-category="musica-visual">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/improvisation1_.webp" alt="Improvisation no.1">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Música visual · Canadá
+            </span>
+
+            <h3>
+              Improvisation no.1
+            </h3>
+
+            <p class="fd-work-author">
+              Luigi Allemano
+            </p>
+
+            <a href="obras/improvisation.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- TEMAZCALLI -->
+
+        <article class="fd-work-card" data-category="narrativas">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/temazcalli-dome.webp" alt="Temazcalli Dome">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Narrativas sensoriales · México
+            </span>
+
+            <h3>
+              Temazcalli Dome
+            </h3>
+
+            <p class="fd-work-author">
+              Agustín Ramos Anzorena · Tzomoni · Joaquín Gómez · Paloma Márquez
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/temazcalli.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- ASTROLABIO -->
+
+        <article class="fd-work-card" data-category="arte-ciencia">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/astrolabio.webp" alt="Astrolabio">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Arte y ciencia · Argentina
+            </span>
+
+            <h3>
+              Astrolabio
+            </h3>
+
+            <p class="fd-work-author">
+              Laura Palavecino · Iván Galiussi
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/astrolabio.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- TIEMPO CURVO -->
+
+        <article class="fd-work-card" data-category="narrativas">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/Tiempo-curvo.jpg" alt="Tiempo curvo">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Narrativas sensoriales · Argentina
+            </span>
+
+            <h3>Tiempo curvo</h3>
+
+            <p class="fd-work-author">
+              Elena Laplana · Andrés Venturino
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/tiempo-curvo.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- L.H.C.V.M.M -->
+
+        <article class="fd-work-card" data-category="musica-visual">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/L.H.C.V.M.M.webp" alt="L.H.C.V.M.M">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Música visual · Argentina
+            </span>
+
+            <h3>L.H.C.V.M.M</h3>
+
+            <p class="fd-work-author">
+              Matías Zabaljáuregui · Leonardo Zimmerman · Diego Dorado · Lucas Samaruga
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/lhcvmm.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- COSMOGONIAS BIO EMERGENTES -->
+
+        <article class="fd-work-card" data-category="generativo">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/cosmogonias_bioemergentes.jpg" alt="Cosmogonías Bio Emergentes">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Arte generativo · Argentina
+            </span>
+
+            <h3>Cosmogonías Bio Emergentes</h3>
+
+            <p class="fd-work-author">
+              Paulino Estela · Franco Matías Robles
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/cosmogonias-bio-emergentes.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- COSMOGRAFIAS -->
+
+        <article class="fd-work-card" data-category="arte-ciencia">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/CosmografiasSonoras.jpg" alt="Cosmografías">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Arte y ciencia · Brasil
+            </span>
+
+            <h3>Cosmografías sonoras</h3>
+
+            <p class="fd-work-author">
+              Andreia Machado Oliveira · Matheus Moreno Camargo · Muriel Paraboni · Alexandre Montibeller · Evaristo do Nascimento · Fabio Gomes de Almeida · Cristiano Figueiró
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/cosmografias.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- ASTERISMO IDIS -->
+
+        <article class="fd-work-card" data-category="arte-ciencia">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/IDIS-RUD_TRILNICK_RAMISweb.png" alt="Asterismo IDIS">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Investigación artística · Argentina
+            </span>
+
+            <h3>Asterismo IDIS</h3>
+
+            <p class="fd-work-author">
+              Carlos Trilnick · Gabriel Rud · Mariano Ramis
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/asterismo-idis.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+        <!-- ESTADOS HIBRIDOS -->
+
+        <article class="fd-work-card" data-category="performance">
+          <div class="fd-work-image">
+            <img src="assets/img/obras/estados_hibridos-2.webp" alt="Estados Híbridos">
+          </div>
+
+          <div class="fd-work-body">
+            <span class="fd-work-meta">
+              Performance audiovisual · Argentina
+            </span>
+
+            <h3>Estados Híbridos</h3>
+
+            <p class="fd-work-author">
+              Agustín Genoud · Paula Coton
+            </p>
+
+            <p class="fd-work-context">
+              Taller fulldome
+            </p>
+
+            <a href="obras/estados-hibridos.html" class="fd-work-link">
+              Ver ficha
+            </a>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- FOOTER -->
+
+      <footer class="fd-footer">
+        <span>
+          © Laboratorio Pedagógico Fulldome
+        </span>
+
+        <span>
+          Archivo curado · versión beta
+        </span>
+      </footer>
+
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
